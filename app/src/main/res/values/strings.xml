@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Filter</string>
+    <string name="item_search_view_hint">Search</string>
+    <string name="home_activity_title">Please input the name</string>
+    <string name="loading_info">Loading the data&#8230;</string>
+    <string name="loading_failed">Failed to load the data&#8230;</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IndexBarView">
+        <attr name="index_bar_text_color" format="color|reference"/>
+        <attr name="index_bar_background_color" format="color|reference"/>
+        <attr name="index_bar_choose_text_color" format="color|reference"/>
+
+        <attr name="index_bar_text_size" format="dimension"/>
+    </declare-styleable>
+</resources>

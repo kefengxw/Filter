@@ -1,0 +1,19 @@
+<resources>
+
+    <dimen name="recycler_view_left_right_margin">32dp</dimen>
+    <dimen name="item_text_text_size">18sp</dimen>
+
+    <dimen name="item_text_left_right_margin">16dp</dimen>
+    <dimen name="item_image_top_bottom_margin">24dp</dimen>
+
+    <dimen name="item_recycler_title_height">64dp</dimen>
+    <dimen name="item_recycler_title_text_size">10sp</dimen>
+
+    <dimen name="index_bar_margin">8dp</dimen>
+    <dimen name="index_bar_hint_text_size">32sp</dimen>
+    <dimen name="index_bar_hint_text_margin">24dp</dimen>
+
+    <dimen name="tool_bar_shadow">4dp</dimen>
+
+    <dimen name="loading_text_size">32sp</dimen>
+</resources>

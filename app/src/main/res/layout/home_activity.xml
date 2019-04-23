@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.filter.android.view.HomeActivity">
+
+    <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/recycler_view_left_right_margin"
+            android:layout_marginRight="@dimen/recycler_view_left_right_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tool_bar"
+            tools:listitem="@layout/item_recycler_view">
+    </android.support.v7.widget.RecyclerView>
+
+    <com.filter.android.view.IndexBarView
+            android:id="@+id/index_bar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/index_bar_margin"
+            android:layout_marginEnd="@dimen/index_bar_margin"
+            android:layout_marginBottom="@dimen/index_bar_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/guideline_h_index"
+            app:layout_constraintTop_toBottomOf="@+id/tool_bar"/>
+
+    <TextView
+            android:id="@+id/index_bar_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/index_bar_hint_text_margin"
+            android:background="@drawable/index_bar_hint_text_bg"
+            android:gravity="center"
+            android:textColor="@color/colorIndexBarHintText"
+            android:textSize="@dimen/index_bar_hint_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_h_index"
+            app:layout_constraintHorizontal_bias="0.618"
+            app:layout_constraintStart_toStartOf="@+id/guideline_h_half"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.382"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideline_h_half"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.618"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideline_h_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.918"/>
+
+    <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/progressBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/loading_info"
+            android:textColor="@color/colorLoadingText"
+            android:textSize="@dimen/loading_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"/>
+
+    <TextView
+            android:id="@+id/load_failInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/loading_failed"
+            android:textColor="@color/colorLoadingText"
+            android:textSize="@dimen/loading_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"/>
+
+    <android.support.constraint.Group
+            android:id="@+id/group_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="progressBarText,progressBar"/>
+
+</android.support.constraint.ConstraintLayout>
