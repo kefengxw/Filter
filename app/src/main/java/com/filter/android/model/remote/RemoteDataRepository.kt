@@ -18,7 +18,7 @@ class RemoteDataRepository(remoteService: RemoteDataInfoService) {
         limit: Int,
         offset: Int
     ): Single<Response<RemoteBean>> {
-        return mDataInfoService.getRemoteInfo("Bearer ${VISIT_TOKEN}", name, type, market, limit, offset)
+        return mDataInfoService.getRemoteInfo("Bearer $VISIT_TOKEN", name, type, market, limit, offset)
     }
 
     //fun getRemoteToken(body: String = "client_credentials"): Single<Response<RemoteToken>> {

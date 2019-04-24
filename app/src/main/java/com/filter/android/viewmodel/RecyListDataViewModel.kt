@@ -54,10 +54,8 @@ class RecyListDataViewModel(app: Application) : BaseViewModel(app) {
 
     private fun getDataByName(input: String): LiveData<Resource<DisplayData>> {
         //all the logical is done by ViewModel
-        //return mLocalRepos.getDataByName(input.toLowerCase() + "%");
-        val it: Flowable<Resource<DisplayData>>
-
-        it = mRepos.getDataByName(input.toLowerCase(), "artist", "SE")
+        //Flowable<Resource<DisplayData>> (input.toLowerCase() + "%");
+        val it = mRepos.getDataByName(input.toLowerCase(), "artist", "SE")
         return LiveDataReactiveStreams.fromPublisher(it)
     }
 

@@ -75,6 +75,6 @@ class DataRepository(remote: RemoteDataRepository, appExecutors: AppExecutors) {
         mResultDisplay.total = artists.total
         mResultDisplay.item = tmpList
 
-        return mResultDisplay;
+        return mResultDisplay
     }
 }

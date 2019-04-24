@@ -138,7 +138,7 @@ class HomeActivity : BaseActivity() {
             it?.let {
                 updateViewStatus(it.mStatus)
                 if (it.mStatus == SUCCESS) {
-                    updateViewData(it.mData);
+                    updateViewData(it.mData)
                 }
             }
         }
@@ -178,7 +178,7 @@ class HomeActivity : BaseActivity() {
                 mItemList.add(ItemRecyclerDisplayData(i.name, i.imagesUrl))
             }
         }
-        mItemList.sortBy({ it.name })//ascending order
+        mItemList.sortBy { it.name }//ascending order
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

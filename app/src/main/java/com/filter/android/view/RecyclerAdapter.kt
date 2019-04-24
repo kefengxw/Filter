@@ -51,7 +51,7 @@ class RecyclerAdapter(ctx: Context) : Adapter<RecyclerAdapter.RecyclerHolder>() 
         if (currentData.imagesUrl == "") {
             Glide.with(mCtx).load(R.drawable.default_image_icon).into(holder.mIvFlag)//default Image
         } else {
-            Glide.with(mCtx).load(currentData.imagesUrl).into(holder.mIvFlag);
+            Glide.with(mCtx).load(currentData.imagesUrl).into(holder.mIvFlag)
         }
     }
 
@@ -72,7 +72,7 @@ class RecyclerAdapter(ctx: Context) : Adapter<RecyclerAdapter.RecyclerHolder>() 
 
         private var mItemLer: OnItemClickListener? = null
         var mIvFlag: ImageView = itemView.findViewById(R.id.item_image)
-        var mTvName: TextView
+        var mTvName: TextView = itemView.findViewById(R.id.item_text)
 
         private val onClickListener = View.OnClickListener {
             val position = adapterPosition
@@ -82,9 +82,7 @@ class RecyclerAdapter(ctx: Context) : Adapter<RecyclerAdapter.RecyclerHolder>() 
         }
 
         init {
-            mTvName = itemView.findViewById(R.id.item_text)
             mItemLer = listener
-
             itemView.setOnClickListener(onClickListener)
         }
     }
