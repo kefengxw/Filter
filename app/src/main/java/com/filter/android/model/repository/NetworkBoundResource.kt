@@ -1,7 +1,7 @@
 package com.filter.android.model.repository
 
-import android.support.annotation.MainThread
-import android.support.annotation.WorkerThread
+import androidx.annotation.MainThread
+import androidx.annotation.WorkerThread
 import com.filter.android.model.data.AppExecutors
 import com.filter.android.model.remote.Resource
 import io.reactivex.BackpressureStrategy

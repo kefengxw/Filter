@@ -1,16 +1,20 @@
 package com.filter.android.view
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
 import android.content.Context
 import android.os.Bundle
-import android.support.constraint.Group
-import android.support.v7.widget.*
 import android.view.Menu
 import android.view.View
 import android.view.View.INVISIBLE
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView
+import androidx.appcompat.widget.SearchView
+import androidx.appcompat.widget.Toolbar
+import androidx.constraintlayout.widget.Group
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.filter.R
 import com.filter.android.di.component.HomeActivityComponent
 import com.filter.android.di.module.HomeActivityModule
@@ -86,7 +90,12 @@ class HomeActivity : BaseActivity() {
 
         mTitle = TitleDecoration(mCtx)
 
-        mRecyclerView.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
+        mRecyclerView.addItemDecoration(
+            DividerItemDecoration(
+                this,
+                DividerItemDecoration.VERTICAL
+            )
+        )
         mRecyclerView.addItemDecoration(mTitle)
     }
 

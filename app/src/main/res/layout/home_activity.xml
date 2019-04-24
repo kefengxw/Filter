@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -11,7 +11,7 @@
             android:id="@+id/tool_bar"
             layout="@layout/tool_bar"/>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -20,7 +20,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tool_bar"
             tools:listitem="@layout/item_recycler_view">
-    </android.support.v7.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
     <com.filter.android.view.IndexBarView
             android:id="@+id/index_bar"
@@ -52,14 +52,14 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.382"/>
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_h_half"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.618"/>
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_h_index"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -101,10 +101,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/progressBar"/>
 
-    <android.support.constraint.Group
+    <androidx.constraintlayout.widget.Group
             android:id="@+id/group_loading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:constraint_referenced_ids="progressBarText,progressBar"/>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

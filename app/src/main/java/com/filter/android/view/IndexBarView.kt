@@ -4,11 +4,11 @@ import android.content.Context
 import android.content.res.Resources
 import android.graphics.Canvas
 import android.graphics.Paint
-import android.support.v4.content.ContextCompat
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import com.filter.R
 import com.filter.android.model.data.InternalDataConfiguration.INDEX_BAR_LETTER_SPLIT
 import java.util.*

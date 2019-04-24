@@ -1,10 +1,10 @@
 package com.filter.android.viewmodel
 
 import android.app.Application
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.LiveDataReactiveStreams
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.Transformations
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.LiveDataReactiveStreams
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Transformations
 import com.filter.android.app.HomeApplication
 import com.filter.android.model.data.AppExecutors
 import com.filter.android.model.remote.Resource
